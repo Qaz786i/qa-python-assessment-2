@@ -52,7 +52,17 @@ def one(string):
 
 
 def two(number):
-    return False
+   def two(number):
+    if number > 1:
+     for i in range(2, number):
+      if number % i == 0:
+        return False
+    elif number % number == 1:
+     return True
+    else:
+     return True
+    
+print(two(4))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -124,7 +134,10 @@ def four(string1, string2):
 
 
 def five():
-    return []
+    pass
+
+import random
+print(random.sample([i for i in range(1,100) if i%2==0], 5))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
