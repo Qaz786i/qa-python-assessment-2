@@ -173,7 +173,15 @@ print(random.sample([i for i in range(1,100) if i%2==0], 5))
 
 
 def six(string):
-    return False
+    if string[-1] == str("y") or string[-2] == str("p"):
+        return True
+    else:
+        return False
+    
+print(six("ilovepy"))
+print(six("welovepy")) 
+print(six("welovepyforreal")) 
+print(six("pyiscool"))
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
