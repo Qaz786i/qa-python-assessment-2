@@ -31,7 +31,11 @@
 # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
+    new_str = ""
+    for char in str:
+        new_str += char*2
+        return new_str
+        
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -82,7 +86,17 @@ print(two(4))
 
 
 def three(a):
-    return 1
+    pass 
+
+value = input("Enter value: ")
+
+n1 = value * 1
+n2 = value * 2
+n3 = value * 3
+n4 = value * 4
+
+total = int(n1) + int(n2) + int(n3) + int(n4)
+print(total)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
